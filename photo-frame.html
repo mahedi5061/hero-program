@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Frame</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 200px;
+            border: 5px  solid black;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .photo-frame img{
+            width: 300px;
+            height: 200px;
+        }
+        .content{
+           /* position: absolute;*/
+           position: absolute;;
+           top:0;
+           width: 300px;
+            height: 200px;
+            display: none;
+        }
+        .container:hover .content{
+            display: block;
+            background-color:#bd8484;
+            opacity: 0.4;
+        }
+        .main{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Photo frame</h2>
+     <div class="container">
+         <div class="photo-frame">
+             <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Photo Text</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+     
+    </div>
+</body>
+</html>
